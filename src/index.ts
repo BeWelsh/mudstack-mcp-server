@@ -63,8 +63,8 @@ async function accountAPIRequest<T>(endpoint: string="accounts", jwt: string): P
     const baseUrl = process.env.API_BASE_URL;
     const url = `${baseUrl}${endpoint}`;
     
-    console.log(`🔑 Using token: ${jwt.substring(0, 20)}...`);
-    console.log(`📡 Making request to: ${url}`);
+    console.log(`Using token: ${jwt.substring(0, 20)}...`);
+    console.log(`Making request to: ${url}`);
     
     const options = {
       method: 'GET', headers: {
